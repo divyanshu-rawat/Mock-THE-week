@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import Nav from './Nav';
+import { Link } from 'react-router-dom';
+import Nav from './navigation';
 import { get_food_jokes_data } from '../utils/fetch_api_data';
 
 
@@ -13,6 +13,7 @@ class FoodJokes extends Component {
 
   get_food_jokes_() {
     get_food_jokes_data().then((jokes) => {
+      console.log(jokes);
       this.setState({ jokes });
     });
   }
@@ -53,7 +54,7 @@ class FoodJokes extends Component {
         <div className="col-sm-12">
             <div className="jumbotron text-center">
               <h2>View Celebrity Jokes</h2>
-              <Link className="btn btn-lg btn-success" to='/celebrity_jokes'> Celebrity Jokes </Link>
+              <Link className="btn btn-lg btn-success" to='/celebrityjokes'> Celebrity Jokes </Link>
             </div>
         </div>
       </div>

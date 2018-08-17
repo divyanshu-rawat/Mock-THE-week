@@ -20,4 +20,4 @@ function get_celebrity_jokes_data() {
   })
 }
 
-export {getFoodData, getCelebrityData};
+export {get_food_jokes_data, get_celebrity_jokes_data};

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import Nav from './Nav';
-import { get_celebrity_jokes_data } from '../utils/chucknorris-api';
+import { Link } from 'react-router-dom';
+import Nav from './navigation';
+import { get_celebrity_jokes_data } from '../utils/fetch_api_data';
 
 class CelebrityJokes extends Component {
 
@@ -17,6 +17,7 @@ class CelebrityJokes extends Component {
   }
 
   componentDidMount() {
+    console.log('Hey');
     this.get_celebrity_jokes_();
   }
 

@@ -2,7 +2,7 @@
 
 
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 class Nav extends Component {
@@ -18,7 +18,7 @@ class Nav extends Component {
             <Link to="/">Food Jokes</Link>
           </li>
           <li>
-           <Link to="/celebrity_jokes">Celebrity Jokes</Link>
+           <Link to="/celebrityjokes">Celebrity Jokes</Link>
           </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
