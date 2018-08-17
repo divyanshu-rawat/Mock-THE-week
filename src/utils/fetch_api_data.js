@@ -11,7 +11,7 @@ function get_food_jokes_data() {
   })
 }
 
-function getCelebrityData() {
+function get_celebrity_jokes_data() {
   const url = `${BASE_URL}/api/jokes/celebrity`;
   return axios.get(url).then(response => response.data)
   .catch( (err) =>{
