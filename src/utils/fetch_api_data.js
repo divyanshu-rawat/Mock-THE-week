@@ -16,7 +16,7 @@ function get_celebrity_jokes_data() {
   return axios.get(url).then(response => response.data)
   .catch( (err) =>{
   	console.log('err',err);
-  	return err;
+  	return [];
   })
 }
 

@@ -6,6 +6,9 @@ import App from './App';
 
 import CelebrityJokes from './components/celebrity_jokes';
 import FoodJokes from './components/food_jokes';
+import Login     from './components/user_login';
+import Register     from './components/user_register';
+
 import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 
 
@@ -16,7 +19,11 @@ const Root = () => {
       	<Switch>
 
       		<Route path="/celebrityjokes" component={CelebrityJokes}/>
+          <Route path="/login" component={Login}/>
+
+          <Route path="/register" component={Register}/>
 	        <Route exact path="/" component={FoodJokes}/>
+
 	        
 	    </Switch>
       </Router>
