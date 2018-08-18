@@ -61,7 +61,7 @@ class Register extends Component{
 			      <label htmlFor="pwd">Password:</label>
 			      <input type="password" className="form-control" value = {this.state.password} onChange = {(e) => {this.handle_password_change(e)}}/>
 			    </div>
-			    <button type="submit" className="btn btn-default" onClick = {this.register}>Submit</button>
+			    <button  className="btn btn-default" onClick = {this.register}>Register</button>
 
 			</div>
 		</div>
