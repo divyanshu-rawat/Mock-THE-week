@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://mock-the-week.herokuapp.com/api';
