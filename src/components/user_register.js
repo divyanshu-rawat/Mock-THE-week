@@ -16,7 +16,8 @@ class Register extends Component{
 
 		this.state = {
 			email : '' ,
-			password : '' 
+			password : '',
+			username : ''
 		}
 	}
 
@@ -62,6 +63,8 @@ class Register extends Component{
 			      <input type="password" className="form-control" value = {this.state.password} onChange = {(e) => {this.handle_password_change(e)}}/>
 			    </div>
 			    <button  className="btn btn-default" onClick = {this.register}>Register</button>
+
+
 
 			</div>
 		</div>

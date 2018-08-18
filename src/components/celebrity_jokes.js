@@ -20,7 +20,6 @@ class CelebrityJokes extends Component {
   }
 
   componentDidMount() {
-    console.log('Hey');
     this.get_celebrity_jokes_();
   }
 
