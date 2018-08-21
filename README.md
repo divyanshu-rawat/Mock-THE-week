@@ -7,3 +7,6 @@ A list of common food jokes will be available to the general public, while the c
 
 REST - API :
 https://github.com/divyanshu-rawat/jwt-encrypted-api
+
+Heroku - URL :
+https://glacial-river-90152.herokuapp.com/
