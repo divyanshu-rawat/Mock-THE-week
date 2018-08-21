@@ -53,7 +53,6 @@ class Register extends Component{
 		 <Nav />
 			<div className="container col-lg-4">
 			  <h2>User Register</h2>
-
 			    <div className="form-group">
 			      <label htmlFor="email">Email:</label>
 			      <input type="email" className="form-control" value = {this.state.email} onChange = {(e) => {this.handle_email_change(e)}} />
@@ -63,9 +62,6 @@ class Register extends Component{
 			      <input type="password" className="form-control" value = {this.state.password} onChange = {(e) => {this.handle_password_change(e)}}/>
 			    </div>
 			    <button  className="btn btn-default" onClick = {this.register}>Register</button>
-
-
-
 			</div>
 		</div>
 	  )

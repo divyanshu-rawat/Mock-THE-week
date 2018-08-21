@@ -13,8 +13,6 @@ class CelebrityJokes extends Component {
   get_celebrity_jokes_() {
     get_celebrity_jokes_data().then((jokes) => {
       this.setState({ jokes });
-
-
       console.log(this)
     });
   }

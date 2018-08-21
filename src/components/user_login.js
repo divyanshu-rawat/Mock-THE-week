@@ -12,13 +12,11 @@ class Login extends React.Component{
 
   	constructor(props){
 		super(props);
-	
 		this.state = {
 			email : '' ,
 			password : '',
 			username : ''
 		}
-
 		this.login = this.login.bind(this);
 	}
 
@@ -41,12 +39,9 @@ class Login extends React.Component{
 		    password: this.state.password
 		  })
 		  .then( (response) => {
-		    console.log(response);
-
+		   console.log(response);
 		   console.log(response.data.token);
-
 		   sessionStorage.setItem('jwtToken', response.data.token);
-
 		   this.setState({
 		    username : response.data.user.username
 		   })
